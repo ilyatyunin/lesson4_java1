@@ -9,7 +9,7 @@ public class Main {
         // 1. Целочисленные
         byte varByte = 10; // = присваивание //-128...127
         System.out.println(varByte);
-        short varShort = 10; - 32768 ... 32767
+        short varShort = 10; // - 32768 ... 32767
         int varInt = 10;
         long varLong = 10;
         String s = "stroka";
@@ -45,6 +45,13 @@ public class Main {
         } else {
             System.out.println("Default name");
         }
+//    Структура и классы
+//    struct Point { // идея структуры объединить данные в набор с именем
+//            double pointX = 45.8754;
+//            double pointY = 10.2347;
+//        }
+
+
 
 
     }
