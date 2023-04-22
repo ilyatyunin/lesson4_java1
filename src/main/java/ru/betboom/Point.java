@@ -1,8 +1,8 @@
 package ru.betboom;
 
 public class Point {
-    private final double pointX; // делаем private чтоб не меняли координаты
-    private final double pointY; // final -- делает поле константой, мб проинициализирован только 1 раз
+    private double pointX; // делаем private чтоб не меняли координаты
+    private double pointY; // final -- делает поле константой, мб проинициализирован только 1 раз
     private final String pointName;
 
     public Point(double pointX, double pointY, String pointName) { // конструктор
@@ -20,7 +20,7 @@ public class Point {
 //        pointY = tmp;
 //    }
     public Point inverse() { // вариант инверсии чз создание нового объекта
-        return new Point(pointY, pointX);
+        return new Point(pointY, pointX, "inverse");
     }
     public void printSelf() {
         System.out.println("pointX: " + pointX + " pointY: " + pointY);

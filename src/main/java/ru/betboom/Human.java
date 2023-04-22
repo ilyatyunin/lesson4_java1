@@ -5,9 +5,9 @@ public class Human {
     private int age;
     private String[] hobbies;
 
-    public Human(String name, int age, String[] hobbies) {
+    public Human(String name, String age, String[] hobbies) {
         this.name = name;
-        this.age = age;
+        this.age = Integer.parseInt(age);
         this.hobbies = hobbies;
     }
 }

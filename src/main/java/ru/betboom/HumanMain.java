@@ -22,7 +22,7 @@ public class HumanMain {
         int[][] intArray = new int[][] { // массив массивов
                 new int[] {1,2,3},
                 new int[] {10,20,30},
-        }
+        };
 
 //        Список
         List<String> hobbiesList = new ArrayList<>(); // ArrayList используем в большинстве случаев, работает через массивы, оч быстро добавляет в массив новый элемент, лишает всех недостатков массива, неограниченная длина, можно сортировать, добавлять искать объекты и тд
@@ -47,7 +47,7 @@ public class HumanMain {
 
         Human dima = new Human("Дима", "33", hobbies);
         Human dima1 = new Human("Дима", "33", hobbies);
-        boolean equals dima.equals(dima1); // метод equals есть у любого объекта (сравнивает значения в примитивах и место в памяти у объектных типов)
+        boolean equals = dima.equals(dima1); // метод equals есть у любого объекта (сравнивает значения в примитивах и место в памяти у объектных типов)
 
         Map<String, Human> humans = new HashMap<>(); // позволяет оч быстро работать с данными если знаем ключ (userID сохранили в мапу и достаем по userID pначения)
         humans.put("12345678", dima);
@@ -73,7 +73,7 @@ public class HumanMain {
             arrayCantainJava = true;
             }
             index++;
-        } while (!arrayCantainJava && index < hobbies.length)
+        } while (!arrayCantainJava && index < hobbies.length);
 
 
 
